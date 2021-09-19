@@ -1,4 +1,4 @@
-module "my_vpc" {
+module "my_vpc_module" {
     source = "git::https://github.com/Lalitduggal/terraform-aws-modules-monorepo.git//vpc"
 
     cidr_block       = var.cidr_block
