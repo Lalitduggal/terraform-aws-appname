@@ -17,3 +17,10 @@ variable "vpc_name" {
     default = "test03-vpc"
     description = "Name of the vpc"
 }
+
+
+variable "my_igw_name" {
+    type = string
+    default = "test03-igw"
+    description = "Name of the igw"
+}
