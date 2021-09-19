@@ -24,3 +24,10 @@ variable "my_igw_name" {
     default = "test03-igw"
     description = "Name of the igw"
 }
+
+
+variable "my_public_subnet_cidr_block" {
+    type = string
+    default = "10.1.1.0/24"
+    description = "CIDR of public subnet"
+}
