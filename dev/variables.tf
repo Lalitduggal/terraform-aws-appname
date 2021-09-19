@@ -52,3 +52,11 @@ variable "my_public_subnet_route_table_id" {
     default = "test123-rt-id"
     description = "Id of the public subnet route table"
 }
+
+
+
+variable "route_for_igw_destination_cidr_block" {
+    type = string
+    default = "0.0.0.0/0
+    description = "Internet CIDR"
+}
