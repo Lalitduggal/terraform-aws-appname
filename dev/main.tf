@@ -21,6 +21,6 @@ module "my_public_subnet_module" {
 
     my_public_subnet_vpc_id = module.my_vpc_module.my_vpc_id
     my_public_subnet_cidr_block       = var.my_public_subnet_cidr_block
-    my_pubic_subnet_name       = var.my_public_subnet_name
+    my_public_subnet_name       = var.my_public_subnet_name
 
 }
