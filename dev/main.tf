@@ -38,7 +38,7 @@ module "my_public_route_table_module" {
 module "my_public_route_table_association_module" {
     source = "git::https://github.com/Lalitduggal/terraform-aws-modules-monorepo.git//public-route-table-association"
 
-    my_public_route_table_id = module.my_vpc_module.my_vpc_id
+    my_public_subnet_route_table_id = module.my_vpc_module.my_vpc_id
     my_public_subnet_id       = module.my_public_subnet_module.my_public_subnet_id
         
 }
