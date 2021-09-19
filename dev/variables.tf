@@ -19,6 +19,6 @@ variable "vpc_name" {
 }
 
 variable "my_vpc_id" {
-    my_vpc_id = my_vpc_module.my_vpc_id    
+    default = my_vpc_module.my_vpc_id    
 }
 
