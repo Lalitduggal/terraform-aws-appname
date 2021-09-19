@@ -49,5 +49,6 @@ variable "my_public_subnet_route_table_name" {
 
 variable "my_public_subnet_route_table_id" {
     type = string
+    default = "test123-rt-id"
     description = "Id of the public subnet route table"
 }
