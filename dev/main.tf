@@ -1,5 +1,5 @@
 module "my_vpc" {
-    source = "git::https://github.com/Lalitduggal/terraform-aws-monorepo.git//vpc"
+    source = "git::https://github.com/Lalitduggal/terraform-aws-modules-monorepo.git//vpc"
 
     cidr_block       = var.cidr_block
     instance_tenancy = var.instance_tenancy
