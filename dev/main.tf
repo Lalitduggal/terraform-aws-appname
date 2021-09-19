@@ -29,8 +29,8 @@ module "my_public_subnet_module" {
 module "my_public_subnet_route_table_module" {
     source = "git::https://github.com/Lalitduggal/terraform-aws-modules-monorepo.git//public-route-table"
 
-    my_public_route_table_vpc_id = module.my_vpc_module.my_vpc_id
-    my_public_route_table_name       = var.my_public_route_table_name
+    my_public_subnet_route_table_vpc_id = module.my_vpc_module.my_vpc_id
+    my_public_subnet_route_table_name       = var.my_public_subnet_route_table_name
         
 }
     
