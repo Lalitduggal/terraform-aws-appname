@@ -31,3 +31,10 @@ variable "my_public_subnet_cidr_block" {
     default = "10.1.1.0/24"
     description = "CIDR of public subnet"
 }
+
+
+variable "my_public_subnet_name" {
+    type = string
+    default = "test03-pub-sub"
+    description = "Name of the public subnet"
+}
