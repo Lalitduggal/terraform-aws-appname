@@ -1,4 +1,3 @@
-
 variable "cidr_block" {
     type = string
     default = "10.1.0.0/16"
@@ -17,4 +16,47 @@ variable "vpc_name" {
     type = string
     default = "test03-vpc"
     description = "Name of the vpc"
+}
+
+
+variable "my_igw_name" {
+    type = string
+    default = "test03-igw"
+    description = "Name of the igw"
+}
+
+
+variable "my_public_subnet_cidr_block" {
+    type = string
+    default = "10.1.1.0/24"
+    description = "CIDR of public subnet"
+}
+
+
+variable "my_public_subnet_name" {
+    type = string
+    default = "test03-pub-sub"
+    description = "Name of the public subnet"
+}
+
+
+variable "my_public_subnet_route_table_name" {
+    type = string
+    default = "test03-pub-rt"
+    description = "Name of the public subnet route table"
+}
+
+
+variable "my_public_subnet_route_table_id" {
+    type = string
+    default = "test123-rt-id"
+    description = "Id of the public subnet route table"
+}
+
+
+
+variable "route_for_igw_destination_cidr_block" {
+    type = string
+    default = "0.0.0.0/0"
+    description = "Internet CIDR"
 }
