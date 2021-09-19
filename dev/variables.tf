@@ -17,3 +17,8 @@ variable "vpc_name" {
     default = "test03-vpc"
     description = "Name of the vpc"
 }
+
+variable "my_vpc_id" {
+    my_vpc_id = my_vpc_module.my_vpc_id    
+}
+
