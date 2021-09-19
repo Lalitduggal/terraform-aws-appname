@@ -16,7 +16,7 @@ module "my_igw_module" {
 }
 
     
-module "my_public_subnet" {
+module "my_public_subnet_module" {
     source = "git::https://github.com/Lalitduggal/terraform-aws-modules-monorepo.git//public-subnet"
 
     vpc_id = module.my_vpc_module.my_vpc_id
