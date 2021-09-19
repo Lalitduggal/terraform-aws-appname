@@ -19,7 +19,8 @@ module "my_igw_module" {
 module "my_public_subnet_module" {
     source = "git::https://github.com/Lalitduggal/terraform-aws-modules-monorepo.git//public-subnet"
 
-    vpc_id = module.my_vpc_module.my_vpc_id
-    cidr_block       = var.my_public_subnet_cidr_block
+    my_public_subnet_vpc_id = module.my_vpc_module.my_vpc_id
+    my_public_subnet_cidr_block       = var.my_public_subnet_cidr_block
+    my_pubic_subnet_name       = var.my_public_subnet_name
 
 }
