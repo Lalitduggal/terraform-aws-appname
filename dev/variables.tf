@@ -38,3 +38,10 @@ variable "my_public_subnet_name" {
     default = "test03-pub-sub"
     description = "Name of the public subnet"
 }
+
+
+variable "my_public_route_table_name" {
+    type = string
+    default = "test03-pub-rt"
+    description = "Name of the public route table"
+}
