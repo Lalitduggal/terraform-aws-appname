@@ -42,3 +42,12 @@ module "my_public_subnet_route_table_association_module" {
     my_public_subnet_id       = module.my_public_subnet_module.my_public_subnet_id
         
 }
+        
+        
+module "route_module" {
+    source = "git::https://github.com/Lalitduggal/terraform-aws-modules-monorepo.git//route"
+
+    public_subnet_route_table_id = module.my_public_subnet_route_table_module.my_public_subnet_route_table_id
+    igw_id       = module.my_igw_module.my_igw_id
+        
+}
